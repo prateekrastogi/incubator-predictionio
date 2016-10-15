@@ -103,6 +103,7 @@ if [[ "$OS" = "Linux" && $(cat /proc/1/cgroup) == *cpu:/docker/* ]]; then
   # Java Install
   echo -e "\033[1;36mStarting Java install...\033[0m"
 
+  sudo add-apt-repository ppa:openjdk-r/ppa
   sudo apt-get update
   sudo apt-get install openjdk-8-jdk libgfortran3 -y
 
