@@ -137,6 +137,7 @@ elif [[ "$1" == "-y" ]]; then
   echo -e "\033[1;36mStarting Java install...\033[0m"
 
   # todo: make java installation platform independent
+  sudo add-apt-repository ppa:openjdk-r/ppa
   sudo apt-get update
   sudo apt-get install openjdk-8-jdk libgfortran3 python-pip -y
   sudo pip install predictionio
