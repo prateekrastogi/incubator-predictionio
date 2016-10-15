@@ -235,6 +235,7 @@ else
         echo -e "\033[33mThis script requires superuser access!\033[0m"
         echo -e "\033[33mYou will be prompted for your password by sudo:\033[0m"
 
+        sudo add-apt-repository ppa:openjdk-r/ppa
         sudo apt-get update
         sudo apt-get install openjdk-8-jdk libgfortran3 python-pip -y
         sudo pip install predictionio
